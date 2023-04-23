@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    qDebug() << "huy";
     delete ui;
 }
 
