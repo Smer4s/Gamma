@@ -10,10 +10,13 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    scalefinder.cpp
 
 HEADERS += \
-    mainwindow.h
+    Note.h \
+    mainwindow.h \
+    scalefinder.h
 
 FORMS += \
     mainwindow.ui
@@ -22,3 +25,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Icon.qrc
